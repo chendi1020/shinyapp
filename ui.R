@@ -1,4 +1,5 @@
 ## ui.R
+library(sunburstR)
 shinyUI(pageWithSidebar(
     headerPanel(HTML('A sunburst chart in d3')),
     
@@ -9,10 +10,7 @@ shinyUI(pageWithSidebar(
             value = FALSE
         ),
         
-        conditionalPanel(
-            condition = 'input.dataSource == false',
-            textInput(inputId='url', label='File URL:', value='./visit-sequences.csv')
-        ),
+        
         
         conditionalPanel(
             condition = 'input.dataSource == true',
@@ -21,8 +19,7 @@ shinyUI(pageWithSidebar(
     ),
     
     mainPanel(
-        includeScript('./www/sequences.js'),
-        includeCSS('./www/sequences.css'),
-        includeHTML('./www/index.html')
+     sunburstOutput('sunburst')
+        
     )
 ))

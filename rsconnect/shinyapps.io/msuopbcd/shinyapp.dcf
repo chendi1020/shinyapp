@@ -1,0 +1,8 @@
+name: shinyapp
+account: msuopbcd
+server: shinyapps.io
+bundleId: 403184
+url: https://msuopbcd.shinyapps.io/shinyapp/
+when: 1458923492.32075
+asMultiple: FALSE
+asStatic: FALSE

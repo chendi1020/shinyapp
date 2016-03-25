@@ -1,0 +1,4 @@
+renderSunburst          Widget render function for use in Shiny
+sunburst                htmlwidget for d3.js sequence sunburst diagrams
+sunburstOutput          Widget output function for use in Shiny
+sunburst_html           custom html function for sunburst
